@@ -18,7 +18,13 @@
   height: 100vh;
   grid-gap: 1rem;
   grid-template-rows: auto 2fr 1fr 1fr auto auto;
-  /* grid-template-areas: "nav"; */
+  grid-template-areas: 
+  "nav"
+  "bnr"
+  "mn"
+  "blg"
+  "sb"
+  "ft";
 }
 
 .box1{
@@ -47,11 +53,20 @@
 
 @media (min-width: 720px) {
   .wrapper{
-    
+    grid-template-areas: 
+  "nav nav nav nav"
+  "bnr bnr bnr bnr"
+  "mn mn mn sb"
+  "blg blg blg sb"
+  "ft ft ft ft";
 }
 
 @media (min-width:1020px) {
   .wrapper{
-    
+    grid-template-areas: 
+  "nav nav nav nav nav nav nav nav"
+  "mn bnr bnr bnr bnr bnr bnr sb"
+  "mn blg blg blg blg blg blg sb"
+  "ft ft ft ft ft ft ft ft";
   }
 }
