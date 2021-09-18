@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
 }
 
-.boxes{
+.boxes {
   color: #555;
   text-align: center;
   border: 3px solid #666;
@@ -12,61 +12,64 @@
   font-size: 3rem;
 }
 
-.wrapper{
+.wrapper {
   margin: 1rem;
   display: grid;
   height: 100vh;
   grid-gap: 1rem;
-  grid-template-rows: auto 2fr 1fr 1fr auto auto;
-  grid-template-areas: 
-  "nav"
-  "bnr"
-  "mn"
-  "blg"
-  "sb"
-  "ft";
+  grid-template-rows: auto 2fr 1fr 1fr auto;
+  grid-template-areas:
+    "nav"
+    "bnr"
+    "mn"
+    "blg"
+    "sb"
+    "ft";
 }
 
-.box1{
+.box1 {
   grid-area: nav;
 }
 
-.box2{
+.box2 {
   grid-area: bnr;
 }
 
-.box3{
+.box3 {
   grid-area: mn;
 }
 
-.box4{
+.box4 {
   grid-area: blg;
 }
 
-.box5{
+.box5 {
   grid-area: sb;
 }
 
-.box6{
+.box6 {
   grid-area: ft;
 }
 
 @media (min-width: 720px) {
-  .wrapper{
-    grid-template-areas: 
-  "nav nav nav nav"
-  "bnr bnr bnr bnr"
-  "mn mn mn sb"
-  "blg blg blg sb"
-  "ft ft ft ft";
+  .wrapper {
+    grid-template-areas:
+      "nav nav nav nav"
+      "bnr bnr bnr bnr"
+      "mn mn mn sb"
+      "blg blg blg sb"
+      "ft ft ft ft";
+  }
 }
 
-@media (min-width:1020px) {
-  .wrapper{
-    grid-template-areas: 
-  "nav nav nav nav nav nav nav nav"
-  "mn bnr bnr bnr bnr bnr bnr sb"
-  "mn blg blg blg blg blg blg sb"
-  "ft ft ft ft ft ft ft ft";
+@media (min-width: 1020px) {
+  .wrapper {
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas:
+      "nav nav nav nav nav nav nav nav"
+      "mn bnr bnr bnr bnr bnr bnr sb"
+      "mn blg blg blg blg blg blg sb"
+      "ft ft ft ft ft ft ft ft";
   }
+  
 }
